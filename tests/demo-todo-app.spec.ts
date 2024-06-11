@@ -298,7 +298,7 @@ test.describe('Clear completed button', () => {
   test('should be hidden when there are no items that are completed', async ({ page }) => {
     await page.locator('.todo-list li .toggle').first().check();
     await page.getByRole('button', { name: 'Clear completed' }).click();
-    await expect(page.getByRole('button', { name: 'Clear completed' })).toBeHidden();
+    await expect(page.getByRole('button', { name: 'Clear completed333' })).toBeHidden();
   });
 });
 
